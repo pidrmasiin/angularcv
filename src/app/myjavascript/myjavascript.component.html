@@ -1,0 +1,87 @@
+    <h3>JavaScript</h3>
+    <ul>
+        <li>React</li>
+          <ul style="list-style-type:circle">
+            <li>Redux</li>
+            <li>Ajax</li>
+            <li>Semantic UI</li>
+          </ul>
+        <li>NodeJS</li>
+          <ul style="list-style-type:circle">
+            <li>Express</li>
+          </ul>
+        <li>REST</li>
+          <ul style="list-style-type:circle">
+            <li>MongoDB/Mongoose</li>
+            <li>JSON</li>
+          </ul>
+        <li>Angular2</li>
+        <ul style="list-style-type:circle">
+            <li>Material UI</li>
+        </ul>
+    </ul>
+    <p>
+      Olen oppinut Javascriptin yliopiston full stack -kurssin kautta. Kurssilla pääpaino oli 
+     <i>"React-kirjaston avulla toteutettavissa single page -sovelluksissa, ja niitä tukevissa 
+      Node.js:llä toteutetuissa REST-rajapinnoissa."</i> Tietokantana kurssilla toimi MongoDB, jota
+      käytettiin Mongoose -kirjaston avulla. Kurssin jälkeen olen syventänyt oppimaani omatoimisesti
+      pääasiallisesti Reactia ja NodeJS:ää käyttäen. Tämän esittelysivuston ohjelmoinnissa tutustuin kuitenkin 
+      pintapuolisesti myös Angular2-sovelluskehykseen.
+    <h4>Vaalikone</h4> 
+    <i class="material-icons" style="font-size: 32px">web</i><a style="padding-right: 1em" target="_blank" rel="noopener noreferrer" href="https://vaalitback.herokuapp.com/"><sup> Sovellus</sup></a>
+      <i class="material-icons" style="font-size: 32px">code</i><a target="_blank" rel="noopener noreferrer" href="https://github.com/pidrmasiin/vaalikone"><sup> Github </sup></a><sup>(vanha ulkoasu) </sup><br/>
+      <p>
+      Tämä on tällä hetkellä monimutkaisin tekemäni web-sovellus. Vaalikone on tehty Reactin ja NodeJS:n avulla. 
+      Selainpuolen tilanhallinnassa on käytetty Reduxia ja palvelinpuolella pyyntöjen käsittelyssä apuna on toiminut Express. 
+      </p>
+      <mat-expansion-panel style="background:#e6f2ff;"(opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+        Lisätietoja
+        </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p style="background:white;padding: 2em"> Sovelluksen ajatuksena on vertailla eduskuntaryhmien tekemien päätöksien osuvuutta vaalikoneen käyttäjän näkemyksiin. Lisäksi ajatuksena on, että käyttäjä
+            voisi vertailla ryhmien ja edustajien käyttäytymistä ylen vaalikoneesta löytyneisiin vastauksiin. 
+            <br/><br/>
+            Sovelluksessa onkin hyödynnetty ylen tarjomaa avointa dataa sen oman vaalikoneen vastauksista. Ylen data on parsittu ja 
+            käsitelty sovelluksen tarpeisiin sopivaksi. Käsitellystä datasta  on sitten luotu rajapinta, jota sovellus käyttää.
+            Eduskunnassa tehdyt päätökset avataan ja lisätään avattuina REST-rajapintaan lomakkeella. 
+            <br/><br/>
+            Vaalikone on yhä työnalla ja olen saanut sen ulkoasun muokkaamiseen apua ystävältä. Nykyisen ulkoasun
+            olen tehnyt tämän <a target="_blank" rel="noopener noreferrer" href="https://marvelapp.com/307d052/screen/44649696">marvelapp -prototyypin</a> 
+            pohjalta. Uuden ulkoasun koodi löytyy <a target="_blank" rel="noopener noreferrer" href="https://marvelapp.com/307d052/screen/44649696">täältä</a>. 
+          </p>
+        </mat-expansion-panel>
+    <br/>
+    <h4>Liiteri-animaatiot</h4>    
+    <i class="material-icons" style="font-size: 32px">web</i><a style="padding-right: 1em" target="_blank" rel="noopener noreferrer" href="https://liiterimap.herokuapp.com/cyclist"><sup> Animaatiot</sup></a> <sup>(ei responsiivisia, suunniteltu 892x1517 -tabletille )</sup><br/>
+    <i class="material-icons" style="font-size: 32px">code</i><a target="_blank" rel="noopener noreferrer" href="https://github.com/pidrmasiin/liiteriDnD"><sup> Github</sup></a><br/>
+    
+    <p>
+      Kaksi animaatiota, jotka on toteutettu React-paketteja hyödyntäen. Molemmissa on käytetty NodeJS:ää palvelinpuolella
+      ja reduxia selainpuolen tilanhallinnassa. 
+    </p>
+    <mat-expansion-panel style="background: #e6f2ff"(opened)="panelOpenState = true"
+      (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+      <mat-panel-title>
+        Lisätietoja
+      </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p style="background:white;padding: 2em"> Toisessa käytin react-dnd tarjoamia komponentteja 
+      ja loin simppelin "vedä ja pudota" -toiminnallisuuden. Jouduin myös käyttämään react-dnd-touch-backend -paketin
+      tarjoamia komponentteja, sillä animaatiot tehtiin yrityksen mainostablettia varten. 
+      <br/><br/>
+      Toisessa animaatiossa käytin GreenSock Animation Platform:n gsap-pakettia ja react-lottie -pakettia, joiden
+      avulla loin simppelin pyöräilijä animaation. Paketteja ei ole käytetty aivan optimaalisella tavalla ja käytännössä
+      hyödynsinkin lähinnä setTimeout() metodia ja Reactin routeria. Routeriakaan ei tosin ole käytetty aivan 
+      parhaalla mahdollisella tavalla. 
+      <br/><br/>
+      Animaatiot ovat itsenäisen työn tulos ja apu olisi varmasti helpottanut työtä. Opin kuitenkin paljon
+      ja seuraavalla kerralla ohjelmointi jälkikin on varmasti siistimpää. Ohjelmoinnin lisäksi opin -projektissa
+      myös paljon yleistä startup-yrityksen ja monikansallisten tiimien toiminnasta. Demola -projektista lisää 
+      täällä.
+      </p>
+    </mat-expansion-panel>
+  

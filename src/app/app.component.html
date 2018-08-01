@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container" fxLayout="column"  fxLayoutGap="2em">
+  <div fxLayout="row" style="padding-top: 1em; border-bottom: 0.1em solid #e6f2ff">
+      <button mat-button style="margin: 0.5em;" routerLink="/">Esittely</button>
+      <button mat-button routerLink="/javascript">JavaScript</button>
+      <button mat-button routerLink="/java">Java</button>
+      <button mat-button routerLink="/demola">Demola-projekti</button>
+  </div>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="11em" >
+      <div  fxFlex="20%" >
+        <div fxLayout="row" style="margin-top: 4.5em">
+          <div [ngClass]="targetClass" style="padding: 1em; background: #e6f2ff">
+            <p>Petteri Pääkkönen<br />
+            050 590 68 77<br />
+            petteri.paakkonen@helsinki.fi</p>
+            <img class="center" height="330em" width="240em" src="https://i.imgur.com/SeFIQ2o.jpg" alt="Photo of a me">
+          </div>
+          <div fxFlex="20%"></div>
+        </div>
+      </div>
+    <div fxFlex="80%">
+      <router-outlet></router-outlet>
+    </div>
+  
+  </div>
+  <div fxLayout="row"></div>
+</div>
+
+
+
